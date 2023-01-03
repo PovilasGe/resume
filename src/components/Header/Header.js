@@ -20,29 +20,35 @@ import {
 import {Link, NavLink, withRouter, Routes, Route} from "react-router-dom"
 
 
+
 const Header = (props) => {
 
-  const pathName = props?.location?.pathname
+  const pathName = props?.location?.pathame;
 
   return (
-    
+
     <Navbar expand='lg' sticky='top' className='header'>
-      <Link to='/'>
-        <Nav.Brand className='header_home'>
+      <Routes>
+      <Route path='/'>
+        <Navbar.Brand className='header_home'>
           <HomeRounded />
-        </Nav.Brand>
-      </Link>
+        </Navbar.Brand>
+      </Route>
+
       <Navbar.Toggle />
+      
       <Navbar.Collapse>
         <Nav>
-          <Link to='/' className={pathName == '/' ? 'header_link_active' : 'header_link'}>
+          <Route path='/' className={pathName == '/' ? 'header_link_active' : 'header_link'}>
             Resume
-          </Link>
-          <Link to='/portfolio' className={pathName == '/portfolio' ? 'header_link_active' : 'header_link'}>
+          </Route>
+          
+          <Route path='/portfolio' className={pathName == '/portfolio' ? 'header_link_active' : 'header_link'}>
             Portfolio
-          </Link>
+          </Route>
         </Nav>
       </Navbar.Collapse>
+      </Routes>
     </Navbar>
   )
 }
