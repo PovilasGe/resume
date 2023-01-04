@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Button,
   Form,
@@ -6,8 +6,8 @@ import {
   Nav,
   Navbar,
   NavDropdown,
-} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+} from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import {
   HomeRounded,
   SchoolRounded,
@@ -16,41 +16,53 @@ import {
   LinkedIn,
   GitHub,
   Telegram,
-} from '@mui/icons-material'
-import {Link, NavLink, withRouter, Routes, Route} from "react-router-dom"
-
+} from "@mui/icons-material";
+import { Link, NavLink, withRouter, Routes, Route, useLocation} from "react-router-dom";
+import Resume from "../../pages/Resume/Resume";
+import resumeData from "../../utils/resumeData";
+import CustomButton from "../Button/Button";
+import './Header.css'
 
 
 const Header = (props) => {
-
-  const pathName = props?.location?.pathame;
+  const location = useLocation();
+  const pathName = location?.pathname;
 
   return (
-
-    <Navbar expand='lg' sticky='top' className='header'>
-      <Routes>
-      <Route path='/'>
-        <Navbar.Brand className='header_home'>
+    <Navbar expand="lg" sticky="top" className="header">
+      <Link to="/">
+        <Navbar.Brand className="header_home">
           <HomeRounded />
         </Navbar.Brand>
-      </Route>
-
+      </Link>
       <Navbar.Toggle />
-      
       <Navbar.Collapse>
-        <Nav>
-          <Route path='/' className={pathName == '/' ? 'header_link_active' : 'header_link'}>
+        <Nav className='header_left'>
+          <Link
+            to="/"
+            className={pathName == "/" ? "header_link_active" : "header_link"}
+          >
             Resume
-          </Route>
-          
-          <Route path='/portfolio' className={pathName == '/portfolio' ? 'header_link_active' : 'header_link'}>
+          </Link>
+          <Link
+            to="/portfolio"
+            className={
+              pathName == "/portfolio" ? "header_link_active" : "header_link"
+            }
+          >
             Portfolio
-          </Route>
+          </Link>
         </Nav>
-      </Navbar.Collapse>
-      </Routes>
-    </Navbar>
-  )
-}
 
-export default Header
+        <div className='header_right'>
+          {Object.keys(resumeData.socials).map(key => (
+            <a href={resumeData.socials[key].link} target='_blank'>{resumeData.socials[key].icon}</a>
+          ))}
+          <CustomButton text={'Hire Me'} icon={<Telegram/>}/>
+        </div>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+};
+
+export default Header;

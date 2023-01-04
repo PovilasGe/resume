@@ -19,7 +19,7 @@ function App() {
       <Profile />
     </Grid>
     <Grid item xs>
-    {/* <Header /> */}
+    <Header />
       <Routes>
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/' element={<Resume />} />
