@@ -52,6 +52,14 @@ const Header = (props) => {
           >
             Portfolio
           </Link>
+          <Link
+            to="/contact"
+            className={
+              pathName == "/contact" ? "header_link_active" : "header_link"
+            }
+          >
+            Contact
+          </Link>
         </Nav>
 
         <div className='header_right'>

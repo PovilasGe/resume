@@ -8,8 +8,6 @@ import resumeData from '../../utils/resumeData'
 import { TimelineItem } from '@mui/lab';
 import Icon from '@mui/material/IconButton';
 import TimelineDot from '@mui/lab/TimelineDot';
-
-
 import SchoolIcon from '@mui/icons-material/School';
 
 

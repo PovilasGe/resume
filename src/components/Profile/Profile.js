@@ -46,9 +46,9 @@ const Profile = () => {
         <CustomTimelineItem title='Title' text={resumeData.title}/>
         <CustomTimelineItem title='Email' text={resumeData.email}/>
 
-        {Object.keys(resumeData.socials).map((key) => (
+        {/* {Object.keys(resumeData.socials).map((key) => (
          <CustomTimelineItem key={key} title={key} text={resumeData.socials[key].text} link={resumeData.socials[key].link}/> 
-        ))}
+        ))} */}
         </CustomTimeline>
         <div className='button_container'>
          <CustomButton text='Download CV' icon={<GetAppIcon/>}/>
