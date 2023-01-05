@@ -20,10 +20,12 @@ function App() {
     </Grid>
     <Grid item xs>
     <Header />
-      <Routes>
+    <div className='main_content container_shadow'>
+    <Routes>
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/' element={<Resume />} />
       </Routes>
+    </div>
       <Footer />
     </Grid>
   </Grid>

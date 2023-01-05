@@ -35,4 +35,6 @@ export default {
             icon: <LinkedInIcon />,
         },
     },
+
+    about: 'Aenean eleifend mollis posuere. Proin id neque bibendum, dignissim augue ac, varius mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin id augue ut ligula lobortis hendrerit id quis ipsum. Etiam pharetra leo tempus, porta leo ut, euismod eros. Suspendisse nibh sem, iaculis at condimentum id, ornare non sapien. Integer et leo hendrerit, iaculis elit vitae, posuere ex. \n\n Donec id quam semper, placerat metus in, rhoncus lorem. Sed non bibendum libero. Mauris facilisis orci ante, ac rhoncus nibh imperdiet in. In accumsan tincidunt nisl et sagittis. Praesent aliquet consequat semper. Nullam et velit urna. Nullam tempus arcu in posuere varius. Nullam sit amet ultrices leo, quis luctus orci. Nam nec tempor diam. Fusce volutpat eget tortor eu posuere. Nulla posuere, risus at commodo tincidunt, arcu mauris lobortis est, non tristique mauris eros eget lorem. Fusce lacinia, massa sit amet porttitor tincidunt, augue velit aliquam dolor, id hendrerit ante tortor pulvinar enim. Nam sit amet sapien fermentum, pharetra eros eget, viverra nisi.'
 };
