@@ -39,39 +39,39 @@ export default {
         },
     },
 
-    about: 'Aenean eleifend mollis posuere. Proin id neque bibendum, dignissim augue ac, varius mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin id augue ut ligula lobortis hendrerit id quis ipsum. Etiam pharetra leo tempus, porta leo ut, euismod eros. Suspendisse nibh sem, iaculis at condimentum id, ornare non sapien. Integer et leo hendrerit, iaculis elit vitae, posuere ex. \n\n Donec id quam semper, placerat metus in, rhoncus lorem. Sed non bibendum libero. Mauris facilisis orci ante, ac rhoncus nibh imperdiet in. In accumsan tincidunt nisl et sagittis. Praesent aliquet consequat semper. Nullam et velit urna. Nullam tempus arcu in posuere varius. Nullam sit amet ultrices leo, quis luctus orci. Nam nec tempor diam. Fusce volutpat eget tortor eu posuere. Nulla posuere, risus at commodo tincidunt, arcu mauris lobortis est, non tristique mauris eros eget lorem. Fusce lacinia, massa sit amet porttitor tincidunt, augue velit aliquam dolor, id hendrerit ante tortor pulvinar enim. Nam sit amet sapien fermentum, pharetra eros eget, viverra nisi.',
+    about: 'Hi! My name is Povilas and I am a junior frontend developer with a strong interest in creating engaging and visually appealing user interfaces. I recently graduated "CodeAcademy" Frontend Serverless courses and have been learning on my own as a way to gain practical experience. I have a solid foundation in HTML, CSS, and JavaScript, and am comfortable using frameworks such as ReactJS. I am a quick learner and am always looking for opportunities to expand my knowledge and skills in frontend development. I am excited to join a team of experienced developers and contribute to the creation of innovative and user-friendly products.',
 
     experiences: [
         {
-            title: 'Work 1',
+            title: 'Self-employment',
             date: '2018 - Present',
             description: 'quis luctus orci. Nam nec tempor diam. Fusce volutpat eget'
         },
         {
-            title: 'Work 2',
-            date: '2016 - 2018',
+            title: 'Internship in ""',
+            date: '2022 March - 2022 May',
             description: 'quis luctus orci. Nam nec tempor diam. Fusce volutpat eget'
         },
         {
-            title: 'Workdsa 3',
-            date: '2014 - 2016',
+            title: 'Baltec CNC Technologies',
+            date: '2019 - 2020',
             description: 'quis luctus orci. Nam nec tempor diam. Fusce volutpat eget'
         },
     ],
     educations: [
         {
-            title: 'ed1',
-            date: '2018 - Present',
-            description: 'quis luctus orci. Nam nec tempor diam. Fusce volutpat eget'
+            title: 'CodeAcademy',
+            date: '2022 Aug - 2022 Dec',
+            description: '"Frontend Serverless" programming crouse'
         },
         {
-            title: 'ed  2',
-            date: '2016 - 2018',
-            description: 'quis luctus orci. Nam nec tempor diam. Fusce volutpat eget'
+            title: 'Kaunas University of Technology',
+            date: '2015 - 2019',
+            description: 'Bachelors degree in robotics'
         },
         {
-            title: 'ed  3',
-            date: '2014 - 2016',
+            title: 'Telšiu Zemaites gymnasium',
+            date: '2011-2015',
             description: 'quis luctus orci. Nam nec tempor diam. Fusce volutpat eget'
         },
     ],
@@ -99,7 +99,6 @@ export default {
         description: [
             'ReactJS',
             'JavaScript',
-            'TypeScript',
             'Bootstrap',
             'Material UI',
 
@@ -107,11 +106,11 @@ export default {
     },
     {
         title: 'Back-end',
-        description: ['NodeJS', 'Java', 'Python', 'Solidity' ],
+        description: ['Solidity'],
     },
     {
         title: 'DATABASES',
-        description: ['Firebase', 'MySQL', 'MongoDB'],
+        description: ['MySQL'],
     },
     {
         title: 'SOURCE CONTROL',
