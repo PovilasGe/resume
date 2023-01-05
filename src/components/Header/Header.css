@@ -8,7 +8,7 @@
 
 .header .header_link{
     margin-right: 20px !important;
-    font-weight: 500;
+    font-weight: 600;
     color: darkslategray !important;
     text-decoration: none;
 }
@@ -21,7 +21,7 @@
 
 .header .header_link_active {
     margin-right: 20px !important;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--main-color) !important;
     text-decoration: none;
 }

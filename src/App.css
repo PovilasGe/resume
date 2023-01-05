@@ -23,6 +23,15 @@
     padding-bottom: 45px !important;
 }
 
+.pb_50 {
+    padding-bottom: 50px !important;
+}
+
+.pt_45 {
+    padding-top: 45px !important;
+}
+
+
 
 @media (max-width: 991px){
     .top_60 {
@@ -42,7 +51,6 @@
     border-radius: 6px;
     -webkit-border-radius: 6px;
     margin-bottom: 30px;
-    padding: 30px;
 }
 
 .section_title {
@@ -66,4 +74,13 @@
    opacity: 0.4;
    left: 0;
    background-color: var(--main-color); 
+}
+
+.section {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.graybg {
+    background-color: #fafafa;
 }
