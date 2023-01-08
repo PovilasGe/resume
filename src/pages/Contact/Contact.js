@@ -22,7 +22,7 @@ const Contact = () => {
     return (
         <>
           {/* Conmtact */}
-        <Grid container spacing={5} className='section pt_45 pb_45'>
+        <Grid container spacing={5} className='section pt_45 pb_45 m_0'>
             {/* Contact form */}
             <Grid item xs={12} lg={7}>
                 <Grid container>
@@ -43,11 +43,9 @@ const Contact = () => {
                           <TextField  value={inputValue} onChange={handleChange} fullWidth name='message' label= 'Message' multiline rows={5}/>
                         </Grid>
                         <Grid item xs={12}>
-                        <a
-  href={`mailto:povilasgedminas@gmail.com?subject=Labas, Povilai&body=${inputValue}`}>
-  Submit
+                        <a className='decoration'
+  href={`mailto:povilasgedminas@gmail.com?subject=Labas, Povilai&body=${inputValue}`}><CustomButton className='button' text='Submit' />
 </a>
-                        {/* <CustomButton className='button' text='Submit' /> */}
                         </Grid>
                       </Grid>
                     </Grid>

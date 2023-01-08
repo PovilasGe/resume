@@ -65,3 +65,7 @@
     justify-content: center;
     margin-top: 10px;
 }
+
+.decoration {
+    text-decoration: none;
+}
