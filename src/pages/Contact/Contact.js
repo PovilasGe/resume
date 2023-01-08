@@ -10,8 +10,15 @@ import Icon from '@mui/material/IconButton';
 import TimelineDot from '@mui/lab/TimelineDot';
 import SchoolIcon from '@mui/icons-material/School';
 import CustomButton from '../../components/Button/Button';
+import { useState } from 'react';
 
 const Contact = () => {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
+    console.log(event.target.value)
+  }
     return (
         <>
           {/* Conmtact */}
@@ -27,16 +34,20 @@ const Contact = () => {
                     <Grid item xs={12}>
                       <Grid container spacing={3}>
                         <Grid item xs ={12} sm={6}>
-                          <TextField fullWidth name='name' label= 'name'/>
+                          <TextField fullWidth name='name' label= 'Name'/>
                         </Grid>
                         <Grid item xs ={12} sm={6}>
                           <TextField fullWidth name='email' label= 'E-mail'/>
                         </Grid>
                         <Grid item xs ={12}>
-                          <TextField fullWidth name='message' label= 'Message' multiline rows={5}/>
+                          <TextField  value={inputValue} onChange={handleChange} fullWidth name='message' label= 'Message' multiline rows={5}/>
                         </Grid>
-                        <Grid items xs={12}>
-                        <CustomButton className='button' text='Submit' />
+                        <Grid item xs={12}>
+                        <a
+  href={`mailto:povilasgedminas@gmail.com?subject=Labas, Povilai&body=${inputValue}`}>
+  Submit
+</a>
+                        {/* <CustomButton className='button' text='Submit' /> */}
                         </Grid>
                       </Grid>
                     </Grid>

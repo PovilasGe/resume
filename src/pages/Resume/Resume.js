@@ -20,7 +20,7 @@ const Resume = () => {
         <span></span>
         <h6 className='section_title_text'>About Me</h6>
       </Grid>
-      <Grid items xs={12}>
+      <Grid item xs={12}>
         <Typography variant='body2' className='aboutme_text'>{resumeData.about}</Typography>
       </Grid>
     </Grid>
@@ -37,7 +37,7 @@ const Resume = () => {
           <Grid item sm={12} md={6}>
             <CustomTimeline title='Work Experience' icon={<WorkIcon/>}>
               {resumeData.experiences.map(experience => (
-                <TimelineItem>
+                <TimelineItem key={experience.title}>
                  <CustomTimelineSeparator/>
                   <TimelineContent className='timeline_content'>
                     <Typography className='timeline_title'>{experience.title}</Typography>
@@ -52,7 +52,7 @@ const Resume = () => {
           <Grid item sm={12} md={6}>
             <CustomTimeline title='Education' icon={<SchoolIcon/>}>
               {resumeData.educations.map(education => (
-                <TimelineItem>
+                <TimelineItem key={education.title}>
                  <CustomTimelineSeparator/>
                   <TimelineContent className='timeline_content'>
                     <Typography className='timeline_title'>{education.title}</Typography>
@@ -79,7 +79,7 @@ const Resume = () => {
       <Grid item xs={12}>
         <Grid container spacing={3} justifyContent='space-around'>
           {resumeData.services.map(service =>(
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid key={service.title} item xs={12} sm={6} md={3}>
               <div className='service'>
                 <Icon className='service_icon'>{service.icon}</Icon>
                 <Typography className='service_title' variant='h6'>{service.title}</Typography>
@@ -100,13 +100,13 @@ const Resume = () => {
       </Grid>
         <Grid container justifyContent='space-between' spacing={3}>
         {resumeData.skills.map(skill => (
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid key={skill.title} item xs={12} sm={6} md={3}>
           <Paper elevation={0} className='skill'>
             <Typography variant='h6' className='skill_title'>
               {skill.title}
             </Typography>
             {skill.description.map(element =>(
-              <Typography variant='body2' className='skill_description'>
+              <Typography key={element} variant='body2' className='skill_description'>
                 <TimelineDot variant='outlined' className='timeline_dot'/>
                 {element}
               </Typography>

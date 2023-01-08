@@ -39,7 +39,7 @@ export default {
         },
     },
 
-    about: 'Hi! My name is Povilas and I am a junior frontend developer with a strong interest in creating engaging and visually appealing user interfaces. I recently graduated "CodeAcademy" Frontend Serverless courses and have been learning on my own as a way to gain practical experience. I have a solid foundation in HTML, CSS, and JavaScript, and am comfortable using frameworks such as ReactJS. I am a quick learner and am always looking for opportunities to expand my knowledge and skills in frontend development. I am excited to join a team of experienced developers and contribute to the creation of innovative and user-friendly products.',
+    about: 'Hi! My name is Povilas and I am a junior frontend developer with a strong interest in creating engaging and visually appealing user interfaces. I recently graduated "CodeAcademy" Frontend Serverless courses and have been learning on my own as a way to gain practical experience. I have a solid foundation in HTML, CSS and JavaScript, and I am comfortable using frameworks such as ReactJS. I am a quick learner and I am always looking for opportunities to expand my knowledge and skills in frontend development. I am excited to join a team of experienced developers and contribute to the creation of innovative and user-friendly products.',
 
     experiences: [
         {
@@ -62,7 +62,7 @@ export default {
         {
             title: 'CodeAcademy',
             date: '2022 Aug - 2022 Dec',
-            description: '"Frontend Serverless" programming crouse'
+            description: '"Frontend Serverless" programming course'
         },
         {
             title: 'Kaunas University of Technology',
