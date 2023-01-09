@@ -36,7 +36,7 @@ export default {
             icon: <GitHubIcon />,
         },
         LinkedIn: {
-            link: 'https://www.linkedin.com/in/povilas-gedminas-19781725a/',
+            link: 'https://www.linkedin.com/in/povilasgedminas',
             text: 'My LinkedIn',
             icon: <LinkedInIcon />,
         },
