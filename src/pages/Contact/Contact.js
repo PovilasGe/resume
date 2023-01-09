@@ -22,7 +22,7 @@ const Contact = () => {
     return (
         <>
           {/* Conmtact */}
-        <Grid container spacing={5} className='section pt_45 pb_45 m_0'>
+        <Grid container spacing={5} className='section pb_45 m_0'>
             {/* Contact form */}
             <Grid item xs={12} lg={7}>
                 <Grid container>
@@ -82,7 +82,7 @@ const Contact = () => {
                   <Grid item xs={12}>
                     <Grid container className='contactInfo_socialsContainer'>
                       {Object.keys(resumeData.socials).map(key =>(
-                        <Grid item className='contactInfo_social'>
+                        <Grid key={resumeData.socials.link} item className='contactInfo_social'>
                           <a href={resumeData.socials[key].link}>{resumeData.socials[key].icon}</a>
                         </Grid>
                       ))}
