@@ -20,16 +20,16 @@ export default {
     phone: '+37060146826',
 
     socials: {
-        Facebook: {
-            link: 'https://www.facebook.com/povilas.gedminas.7/',
-            text: 'My Facebook',
-            icon: <FacebookIcon />,
-        },
-        Twitter: {
-            link: 'https://twitter.com/0xGedis',
-            text: 'My Twitter',
-            icon: <TwitterIcon />,
-        },
+        // Facebook: {
+        //     link: 'https://www.facebook.com/',
+        //     text: 'My Facebook',
+        //     icon: <FacebookIcon />,
+        // },
+        // Twitter: {
+        //     link: 'https://twitter.com/',
+        //     text: 'My Twitter',
+        //     icon: <TwitterIcon />,
+       // },
         GitHub: {
             link: 'https://www.github.com/PovilasGe',
             text: 'My Github',
